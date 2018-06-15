@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0; }
+  *:focus {
+    outline: none; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
+
+body {
+  box-sizing: border-box;
+  padding: 1.2rem; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(28, 160, 236, 0.671), rgba(45, 193, 238, 0.61)), url("../images/main.jpg");
+  background-position: top center;
+  height: 95vh;
+  text-align: center;
+  color: #fff;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%); }
+  .header__title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header__title--head {
+      font-size: 5rem;
+      letter-spacing: .8rem; }
+    .header__title--sub {
+      font-size: 1.4rem; }
+    .header__title--btn {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.938);
+      color: rgba(29, 28, 28, 0.918);
+      border: transparent;
+      font-size: 2rem;
+      border-radius: 1rem; }
+
+.info {
+  height: 100vh;
+  background-color: rgba(236, 236, 236, 0.925);
+  margin-top: -9rem; }
+  .info__content {
+    position: relative;
+    padding: 1rem;
+    top: 9rem; }
+
+.menu {
+  height: 4rem;
+  width: 5rem;
+  position: fixed;
+  top: 3%;
+  left: 1%;
+  z-index: 9; }
+  .menu:hover {
+    cursor: pointer; }
+  .menu__button {
+    position: fixed;
+    top: 5%;
+    left: 2rem;
+    z-index: 9;
+    height: 2px;
+    width: 3rem;
+    background-color: rgba(245, 245, 245, 0.856);
+    -webkit-box-shadow: 3px -1px 150px -18px #7412a1;
+    -moz-box-shadow: 3px -1px 150px -18px #3112a1;
+    box-shadow: 3px -1px 150px -18px #5512a1;
+    transition: all .5s linear; }
+    .menu__button::before, .menu__button::after {
+      content: '';
+      position: fixed;
+      height: 2px;
+      width: 3rem;
+      background-color: rgba(245, 245, 245, 0.856); }
+    .menu__button::before {
+      top: 3.5%;
+      left: 2rem; }
+    .menu__button::after {
+      top: 6.5%;
+      left: 2rem; }
+    .menu__button.active {
+      background: transparent; }
+      .menu__button.active::before {
+        top: 5%;
+        transform: rotate(45deg); }
+      .menu__button.active::after {
+        top: 5%;
+        transform: rotate(135deg); }
+  .menu__list {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 8;
+    background-color: #3dadf8;
+    height: 100vh;
+    width: 100vw; }
+    .menu__list--nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .menu__list--nav li a {
+        padding: 2rem;
+        font-size: 3rem;
+        color: rgba(245, 245, 245, 0.938);
+        transition: all .5s linear; }
+        .menu__list--nav li a:hover {
+          color: rgba(220, 20, 60, 0.89); }

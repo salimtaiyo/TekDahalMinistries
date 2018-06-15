@@ -1,0 +1,11 @@
+.info{
+    height: 100vh;
+    background-color:$background-color;
+    margin-top: -9rem;
+
+    &__content{
+        position: relative;
+        padding: 1rem;
+        top: 9rem;
+    }
+}

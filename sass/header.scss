@@ -1,0 +1,38 @@
+.header{
+    background-image: linear-gradient(to right bottom,
+     rgba(28, 160, 236, 0.671),
+     rgba(45, 193, 238, 0.61))
+    ,url('../images/main.jpg');
+    background-position:  top center;
+    height: 95vh;
+    text-align: center;
+    color: #fff;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @include clip;
+
+    &__title{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &--head{
+            font-size: 5rem;
+            letter-spacing: .8rem;
+        }
+        &--sub{
+            font-size: 1.4rem;
+            // letter-spacing: .5ch;
+        }
+
+        &--btn{
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.938);
+            color: rgba(29, 28, 28, 0.918);
+            border: transparent;
+            font-size: 2rem;
+            border-radius: 1rem;
+        }
+    }
+}

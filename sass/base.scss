@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    &:focus {
+        outline: none;
+    }
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 1.2rem;
+}
+
+
+$background-color:rgba(236, 236, 236, 0.925);
+
+@mixin clip{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+}
+    
+@mixin menushadow{
+    -webkit-box-shadow: 3px -1px 150px -18px rgb(116, 18, 161);
+    -moz-box-shadow: 3px -1px 150px -18px rgb(49, 18, 161);
+    box-shadow: 3px -1px 150px -18px rgb(85, 18, 161);
+}
