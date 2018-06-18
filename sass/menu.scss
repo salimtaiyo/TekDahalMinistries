@@ -5,6 +5,7 @@
     top: 3%;
     left: 1%;
     z-index: 9;
+    border-radius: 50%;
 
     &:hover{
         cursor: pointer;
@@ -20,6 +21,7 @@
         background-color: rgba(245, 245, 245, 0.856);
         @include menushadow;
         transition: all .5s linear;
+        border-radius: 50%;
 
         &::before,
         &::after{

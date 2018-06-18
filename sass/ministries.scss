@@ -1,0 +1,52 @@
+.ministries{
+    height: 100vh;
+    transform: skewY(-7deg);
+    margin-top: -9rem;
+    background-image: linear-gradient(to right bottom,
+    rgba(28, 160, 236, 0.671),
+    rgba(45, 193, 238, 0.61))
+   ,url('../images/main.jpg');
+   background-position:  top center;
+   height: 95vh;
+   text-align: center;
+   color: #fff;
+   background-size: 100% 100%;
+
+   &__container{
+        position: relative;
+        top: 15rem;
+        transform: skewY(7deg);
+        display: flex;
+        justify-content: center;
+
+        &--one{
+            
+        }
+        
+   }
+}
+
+// ministries flex box
+.flexed{
+    border-radius: 5%;
+    margin: 2rem;
+    height: 35rem;
+    width: 25rem;
+    background-color: rgba(235, 235, 235, 0.767);
+    transform: translateY(-4px);
+    transition: all .3s linear;
+    display: flex;
+
+    &:hover{
+        transform: translateY(0);
+    }
+    &:active{
+        transform: translateY(0);
+    }
+
+    &__img{
+        height: 18rem;
+        width: 100%;
+    }
+}
+

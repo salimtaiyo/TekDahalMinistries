@@ -48,13 +48,38 @@ body {
       border-radius: 1rem; }
 
 .info {
-  height: 100vh;
+  height: 120vh;
   background-color: rgba(236, 236, 236, 0.925);
   margin-top: -9rem; }
-  .info__content {
+  .info__container {
     position: relative;
     padding: 1rem;
-    top: 9rem; }
+    top: 10rem; }
+    .info__container--header {
+      font-size: 4rem;
+      text-align: center;
+      padding: 6rem; }
+  .info__content {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    .info__content--info {
+      flex: 2;
+      font-size: 1.5rem; }
+    .info__content--img {
+      flex: 1;
+      width: 20rem; }
+
+.fadein {
+  position: relative; }
+  .fadein--img {
+    height: 30rem;
+    width: 40rem; }
+
+.fadein p {
+  position: absolute;
+  left: 0;
+  top: 0; }
 
 .menu {
   height: 4rem;
@@ -62,7 +87,8 @@ body {
   position: fixed;
   top: 3%;
   left: 1%;
-  z-index: 9; }
+  z-index: 9;
+  border-radius: 50%; }
   .menu:hover {
     cursor: pointer; }
   .menu__button {
@@ -76,7 +102,8 @@ body {
     -webkit-box-shadow: 3px -1px 150px -18px #7412a1;
     -moz-box-shadow: 3px -1px 150px -18px #3112a1;
     box-shadow: 3px -1px 150px -18px #5512a1;
-    transition: all .5s linear; }
+    transition: all .5s linear;
+    border-radius: 50%; }
     .menu__button::before, .menu__button::after {
       content: '';
       position: fixed;
@@ -118,3 +145,37 @@ body {
         transition: all .5s linear; }
         .menu__list--nav li a:hover {
           color: rgba(220, 20, 60, 0.89); }
+
+.ministries {
+  height: 100vh;
+  transform: skewY(-7deg);
+  margin-top: -9rem;
+  background-image: linear-gradient(to right bottom, rgba(28, 160, 236, 0.671), rgba(45, 193, 238, 0.61)), url("../images/main.jpg");
+  background-position: top center;
+  height: 95vh;
+  text-align: center;
+  color: #fff;
+  background-size: 100% 100%; }
+  .ministries__container {
+    position: relative;
+    top: 15rem;
+    transform: skewY(7deg);
+    display: flex;
+    justify-content: center; }
+
+.flexed {
+  border-radius: 5%;
+  margin: 2rem;
+  height: 35rem;
+  width: 25rem;
+  background-color: rgba(235, 235, 235, 0.767);
+  transform: translateY(-4px);
+  transition: all .3s linear;
+  display: flex; }
+  .flexed:hover {
+    transform: translateY(0); }
+  .flexed:active {
+    transform: translateY(0); }
+  .flexed__img {
+    height: 18rem;
+    width: 100%; }
