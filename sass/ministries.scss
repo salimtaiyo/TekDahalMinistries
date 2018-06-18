@@ -36,7 +36,9 @@
     transform: translateY(-4px);
     transition: all .3s linear;
     display: flex;
-
+    flex-direction: column;
+    overflow: hidden;
+    
     &:hover{
         transform: translateY(0);
     }
@@ -47,6 +49,18 @@
     &__img{
         height: 18rem;
         width: 100%;
+    }
+
+    &__title{
+        font-size: 2rem;
+        padding: .3rem;
+        color: rgba(0, 0, 0, 0.877);
+    }
+
+    &__info{
+        color: rgba(0, 0, 0, 0.911);
+        padding: 1rem;
+        font-size: 1.5rem;
     }
 }
 

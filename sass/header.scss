@@ -16,23 +16,82 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        
 
         &--head{
             font-size: 5rem;
             letter-spacing: .8rem;
+            animation: slide 2s linear;
+            position: relative;
         }
         &--sub{
             font-size: 1.4rem;
+            animation: slideTwo 2s linear;
+            position: relative;
             // letter-spacing: .5ch;
         }
 
         &--btn{
-            padding: 2rem;
+            padding: 2rem 5rem 2rem 5rem;
             background-color: rgba(255, 255, 255, 0.938);
-            color: rgba(29, 28, 28, 0.918);
+            color: rgba(29, 28, 28, 0.877);
             border: transparent;
             font-size: 2rem;
             border-radius: 1rem;
+            animation: slideUp 1.5s linear;
+            transition: .3s all linear;
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.856);
+                color: #fff;
+            }
         }
+    }
+}
+
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    70%{
+        opacity: .7;
+        transform: translateX(1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes slideTwo{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    70%{
+        opacity: .7;
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes slideUp {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    70%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

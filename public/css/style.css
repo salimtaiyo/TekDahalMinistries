@@ -36,16 +36,58 @@ body {
     transform: translate(-50%, -50%); }
     .header__title--head {
       font-size: 5rem;
-      letter-spacing: .8rem; }
+      letter-spacing: .8rem;
+      animation: slide 2s linear;
+      position: relative; }
     .header__title--sub {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      animation: slideTwo 2s linear;
+      position: relative; }
     .header__title--btn {
-      padding: 2rem;
+      padding: 2rem 5rem 2rem 5rem;
       background-color: rgba(255, 255, 255, 0.938);
-      color: rgba(29, 28, 28, 0.918);
+      color: rgba(29, 28, 28, 0.877);
       border: transparent;
       font-size: 2rem;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      animation: slideUp 1.5s linear;
+      transition: .3s all linear; }
+      .header__title--btn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: #fff; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  70% {
+    opacity: .7;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes slideTwo {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  70% {
+    opacity: .7;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  70% {
+    opacity: .7; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .info {
   height: 120vh;
@@ -65,7 +107,14 @@ body {
     height: 100%; }
     .info__content--info {
       flex: 2;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .info__content--info--title {
+        padding: 2rem 0 2rem 0; }
+      .info__content--info--description {
+        font-size: 1.5rem; }
+      .info__content--info ul li {
+        padding: 1rem; }
     .info__content--img {
       flex: 1;
       width: 20rem; }
@@ -171,7 +220,9 @@ body {
   background-color: rgba(235, 235, 235, 0.767);
   transform: translateY(-4px);
   transition: all .3s linear;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
   .flexed:hover {
     transform: translateY(0); }
   .flexed:active {
@@ -179,3 +230,11 @@ body {
   .flexed__img {
     height: 18rem;
     width: 100%; }
+  .flexed__title {
+    font-size: 2rem;
+    padding: .3rem;
+    color: rgba(0, 0, 0, 0.877); }
+  .flexed__info {
+    color: rgba(0, 0, 0, 0.911);
+    padding: 1rem;
+    font-size: 1.5rem; }

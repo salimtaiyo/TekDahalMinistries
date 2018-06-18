@@ -25,11 +25,24 @@
         &--info{
             flex: 2;
             font-size: 1.5rem;
+            padding: 1rem;
+            &--title{
+                padding: 2rem 0 2rem 0;
+            }
+
+            &--description{
+                font-size: 1.5rem;
+            }
+
+            & ul li{
+               
+                padding: 1rem;
+            }
         }
         // slider
         &--img{
-        flex: 1;
-        width: 20rem;
+            flex: 1;
+            width: 20rem;
         }
 
     }
@@ -39,8 +52,8 @@
 .fadein { position:relative; 
     
     &--img{
-     height: 30rem; 
-    width:40rem; 
+        height: 30rem; 
+        width:40rem; 
     }
  }
 .fadein p { 
