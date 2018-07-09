@@ -7,6 +7,7 @@
 <ul>
     <h3> Technologies used </h3>
     <li> HTML </li>
+    <li> Pug </li>
     <li> CSS </li>
     <li> JS </li>
     <li> jQuery </li>
